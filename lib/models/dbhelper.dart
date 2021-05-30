@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:final_project/models/item_custome.dart';
-import 'package:final_project/models/item_referensi.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -24,17 +23,6 @@ class DbHelper {
   //buat tabel baru dengan nama item
   void _createDb(Database db, int version) async {
     Batch batch = db.batch();
-    //tabel Rekomendasi
-    batch.execute('''
-    CREATE TABLE item (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    kode INTEGER,
-    jenis TEXT,
-    merk TEXT,
-    stok INTEGER,
-    harga INTEGER
-    )
-    ''');
     // tabel Custom
     batch.execute('''CREATE TABLE custom (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -47,13 +35,6 @@ class DbHelper {
     List<dynamic> res = await batch.commit();
   }
 
-  //select databases tabel Rekomendasi
-  Future<List<Map<String, dynamic>>> selectItem() async {
-    Database db = await this.initDb();
-    var mapList = await db.query('item', orderBy: 'id');
-    return mapList;
-  }
-
   //select databases tabel Custom
   Future<List<Map<String, dynamic>>> selectCustom() async {
     Database db = await this.initDb();
@@ -61,25 +42,10 @@ class DbHelper {
     return mapList;
   }
 
-  // insert data tabel Rekomendasi
-  Future<int> insertItem(Item object) async {
-    Database db = await this.initDb();
-    int count = await db.insert('Item', object.toMap());
-    return count;
-  }
-
   // insert data tabel Custom
   Future<int> insertCustom(Custom object) async {
     Database db = await this.initDb();
     int count = await db.insert('custom', object.toMap());
-    return count;
-  }
-
-//update databases tabel rekomendasi
-  Future<int> updateItem(Item object) async {
-    Database db = await this.initDb();
-    int count = await db
-        .update('item', object.toMap(), where: 'id=?', whereArgs: [object.id]);
     return count;
   }
 
@@ -91,29 +57,11 @@ class DbHelper {
     return count;
   }
 
-//delete databases tabel Rekomendasi
-  Future<int> deleteItem(int id) async {
-    Database db = await this.initDb();
-    int count = await db.delete('item', where: 'id=?', whereArgs: [id]);
-    return count;
-  }
-
 //delete databases tabel Custom
   Future<int> deleteCustom(int id) async {
     Database db = await this.initDb();
     int count = await db.delete('custom', where: 'id=?', whereArgs: [id]);
     return count;
-  }
-
-// membuat list item pada tabel rekomendasi
-  Future<List<Item>> getItemListItem() async {
-    var itemMapList = await selectItem();
-    int count = itemMapList.length;
-    List<Item> itemList = List<Item>();
-    for (int i = 0; i < count; i++) {
-      itemList.add(Item.fromMap(itemMapList[i]));
-    }
-    return itemList;
   }
 
 //membuat list item pada tabel custome
