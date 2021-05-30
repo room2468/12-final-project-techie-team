@@ -1,5 +1,5 @@
 import 'package:final_project/pages/custome1.dart';
-import 'package:final_project/pages/recommendation1.dart';
+import 'package:final_project/pages/recommendation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
