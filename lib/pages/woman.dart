@@ -1,4 +1,3 @@
-import 'package:final_project/pages/productInfoMan.dart';
 import 'package:final_project/pages/productInfoWoman.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -92,13 +91,25 @@ class _MainPageState extends State<MainPage> {
       '125 mL'
     ];
     var newNum = id + 1;
+    var itemDetail = [
+      "Bright Crystal Absolu by Versace is a Floral Fruity fragrance for women. Bright Crystal Absolu was launched in 2013. The nose behind this fragrance is Alberto Morillas. Top notes are Pomegranate, Yuzu and Water Notes.",
+      "Coco Mademoiselle by Chanel is a Amber Floral fragrance for women. Coco Mademoiselle was launched in 2001. The nose behind this fragrance is Jacques Polge. Top notes are Orange, Mandarin Orange, Bergamot and Orange Blossom. ",
+      "Gucci Bloom by Gucci is a Floral fragrance for women. Gucci Bloom was launched in 2017. The nose behind this fragrance is Alberto Morillas. Top note is Jasmine; middle note is Tuberose; base note is Rangoon creeper.",
+      "La Vie Est Belle by Lancome is a Floral Fruity Gourmand fragrance for women. La Vie Est Belle was launched in 2012. La Vie Est Belle was created by Olivier Polge, Dominique Ropion and Anne Flipo. Top notes are Black Currant and Pear.",
+      "Le Jour se Lève by Louis Vuitton is a Floral Fruity fragrance for women. Le Jour se Lève was launched in 2018. The nose behind this fragrance is Jacques Cavallier. Top notes are Grapefruit, Orange, Mandarin Orange, Black Currant and Bergamot.",
+      "Daisy Eau So Fresh Sorbet by Marc Jacobs is a Floral Fruity fragrance for women. Daisy Eau So Fresh Sorbet was launched in 2015. The nose behind this fragrance is Richard Herpin. Top notes are Apple Blossom, Mandarin Orange and Lotus."
+    ];
     return Container(
       padding: EdgeInsets.all(10),
       color: Colors.white,
       child: InkWell(
           onTap: () {
-            openProductInfo(newNum, itemPrice[id].toString(),
-                itemNames[id].toString(), itemQuantity[id].toString());
+            openProductInfo(
+                newNum,
+                itemPrice[id].toString(),
+                itemNames[id].toString(),
+                itemQuantity[id].toString(),
+                itemDetail[id].toString());
           },
           child: Column(
             children: <Widget>[
@@ -147,12 +158,14 @@ class _MainPageState extends State<MainPage> {
     );
   }
 
-  void openProductInfo(int id, String price, String name, String quantity) {
+  void openProductInfo(
+      int id, String price, String name, String quantity, String itemDetail) {
     Navigator.pushNamed(context, '/productInfoWoman', arguments: {
       'img': 'img$id',
       'name': name,
       'quantity': quantity,
-      'price': price
+      'price': price,
+      'detail': itemDetail
     });
   }
 }

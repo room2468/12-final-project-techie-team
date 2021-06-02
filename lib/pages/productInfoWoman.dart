@@ -95,7 +95,7 @@ class _ProductInfoState extends State<ProductInfoWoman> {
                 color: Colors.grey.withOpacity(0.2),
                 padding: EdgeInsets.all(25),
                 child: Text(
-                  "Parfum adalah campuran minyak esensial dan senyawa aroma, fiksatif, dan pelarut yang digunakan untuk memberikan bau wangi untuk tubuh manusia, objek, atau ruangan. Ada Berbagai macam ekstrak, yaitu parfum, Eau de parfum, Eau de toilette, atau Eau de Cologne.",
+                  '${rcvdData['detail']}',
                   style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
                   textAlign: TextAlign.justify,
                 ),
