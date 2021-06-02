@@ -28,10 +28,11 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
-  # untuk Slider
-  carousel_pro: ^1.0.0
   sqflite: ^1.3.2+4
   path_provider: ^1.6.28 
+  # untuk Slider
+  carousel_pro: ^1.0.0
+
 
 dev_dependencies:
   flutter_test:
@@ -58,12 +59,12 @@ flutter:
   - img/img5.jpg
   - img/img6.jpg
   - img/img7.jpg
-  - img/cw1.jpeg
-  - img/cw2.jpeg
-  - img/cw3.jpeg
-  - img/cw4.jpeg
-  - img/cw5.jpeg
-  - img/cw6.jpeg
+  - img/cw1.jpg
+  - img/cw2.jpg
+  - img/cw3.jpg
+  - img/cw4.jpg
+  - img/cw5.jpg
+  - img/cw6.jpg
   - img/pic1.jpeg
   - img/pic2.jpeg
   - img/pic3.jpeg
