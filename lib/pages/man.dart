@@ -1,4 +1,4 @@
-import 'package:final_project/pages/productInfoMan.dart';
+import 'package:final_project/pages/productInfoWoman.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +13,7 @@ class Man extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: MainPage(),
       routes: {
-        '/productInfoMan': (context) => ProductInfoMan(),
+        '/productInfoMan': (context) => ProductInfoWoman(),
       },
     );
   }
@@ -91,13 +91,25 @@ class _MainPageState extends State<MainPage> {
       '75 mL'
     ];
     var newNum = id + 1;
+    var itemDetail = [
+      "Dune Pour Homme by Christian Dior is a Woody Floral Musk fragrance for men. Dune Pour Homme was launched in 1997. Dune Pour Homme was created by Olivier Cresp and Jean-Pierre Bethouart. Top notes are Fig Leaf, Cassis, Sage and Basil.",
+      "Les Sables Roses by Louis Vuitton is a Amber Floral fragrance for women and men. This is a new fragrance. Les Sables Roses was launched in 2019. The nose behind this fragrance is Jacques Cavallier.",
+      "Prada L'Homme by Prada is a Woody Chypre fragrance for men. Prada L'Homme was launched in 2016. The nose behind this fragrance is Daniela (Roche) Andrier. Top notes are Neroli, Black Pepper, Cardamom and Carrot Seeds.",
+      "CK One by Calvin Klein is a Citrus Aromatic fragrance for women and men. CK One was launched in 1994. CK One was created by Alberto Morillas and Harry Fremont. Top notes are Lemon, Green Notes, Bergamot, Pineapple, Mandarin Orange, Cardamom and Papaya.",
+      "Bleu de Chanel by Chanel is a Woody Aromatic fragrance for men. Bleu de Chanel was launched in 2010. The nose behind this fragrance is Jacques Polge. Top notes are Grapefruit, Lemon, Mint and Pink Pepper.",
+      "Hypnôse Homme by Lancome is a Amber Fougere fragrance for men. Hypnôse Homme was launched in 2007. The nose behind this fragrance is Maurice Roucel. Top notes are Cardamom, Mint, Bergamot and Mandarin Orange."
+    ];
     return Container(
       padding: EdgeInsets.all(10),
       color: Colors.white,
       child: InkWell(
           onTap: () {
-            openProductInfo(newNum, itemPrice[id].toString(),
-                itemNames[id].toString(), itemQuantity[id].toString());
+            openProductInfo(
+                newNum,
+                itemPrice[id].toString(),
+                itemNames[id].toString(),
+                itemQuantity[id].toString(),
+                itemDetail[id].toString());
           },
           child: Column(
             children: <Widget>[
@@ -105,7 +117,7 @@ class _MainPageState extends State<MainPage> {
                 tag: 'cw$newNum',
                 child: Container(
                   height: 150,
-                  child: Image.asset('img/cw$newNum.jpeg'),
+                  child: Image.asset('img/cw$newNum.jpg'),
                 ),
               ),
               Container(
@@ -146,12 +158,14 @@ class _MainPageState extends State<MainPage> {
     );
   }
 
-  void openProductInfo(int id, String price, String name, String quantity) {
+  void openProductInfo(
+      int id, String price, String name, String quantity, String itemDetail) {
     Navigator.pushNamed(context, '/productInfoMan', arguments: {
       'img': 'cw$id',
       'name': name,
       'quantity': quantity,
-      'price': price
+      'price': price,
+      'detail': itemDetail
     });
   }
 }
