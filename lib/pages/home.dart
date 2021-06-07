@@ -1,8 +1,9 @@
+import 'package:carousel_pro/carousel_pro.dart';
 import 'package:final_project/pages/custome1.dart';
+import 'package:final_project/pages/information.dart';
 import 'package:final_project/pages/recommendation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:carousel_pro/carousel_pro.dart';
 
 class HomeFloral extends StatelessWidget {
   @override
@@ -87,6 +88,30 @@ class HomeFloral extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Custome1()),
+                  );
+                },
+              ),
+            ),
+            //button informasi
+            Container(
+              height: 50,
+              width: 250,
+              margin: EdgeInsets.all(10),
+              child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                    side: BorderSide(color: Color.fromRGBO(0, 0, 0, 1))),
+                child: Column(
+                  children: [
+                    Text("Information",
+                        style: TextStyle(
+                            fontSize: 27, color: Color.fromRGBO(0, 0, 0, 1))),
+                  ],
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Information()),
                   );
                 },
               ),
