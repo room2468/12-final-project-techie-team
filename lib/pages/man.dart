@@ -1,4 +1,5 @@
 import 'package:final_project/pages/productInfoWoman.dart';
+import 'package:final_project/pages/recommendation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -30,14 +31,17 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.teal,
         leading: IconButton(
           icon: Icon(
             Icons.arrow_back_ios,
             color: Colors.black,
           ),
           onPressed: () {
-            Navigator.pop(context);
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Recommendation()),
+            );
           },
         ),
         title: Container(
@@ -49,16 +53,17 @@ class _MainPageState extends State<MainPage> {
             ],
           ),
         ),
-        centerTitle: true,
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(
-              Icons.search,
-              color: Colors.black,
-            ),
-          ),
-        ],
+        // centerTitle: true,
+        // actions: <Widget>[
+        //   IconButton(
+        //     icon: Icon(
+        //       Icons.search,
+        //       color: Colors.black,
+        //     ),
+        //   ),
+        // ],
       ),
+      backgroundColor: Colors.black,
       body: Container(
         padding: EdgeInsets.all(20),
         child: GridView.count(
