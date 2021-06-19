@@ -32,11 +32,11 @@ class _ProductInfoState extends State<ProductInfoMan> {
             ],
           ),
         ),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.favorite_border),
-          )
-        ],
+        // actions: <Widget>[
+        //   IconButton(
+        //     icon: Icon(Icons.favorite_border),
+        //   )
+        // ],
       ),
       body: Container(
         child: Column(
