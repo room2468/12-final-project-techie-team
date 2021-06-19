@@ -13,7 +13,9 @@ class Recommendation1State extends State<Recommendation1> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Recommendation Parfume'),
+          backgroundColor: Colors.teal,
         ),
+        backgroundColor: Colors.black,
         body: Column(children: [
           Container(
             child: Column(
