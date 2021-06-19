@@ -12,7 +12,7 @@ class _ProductInfoState extends State<ProductInfoWoman> {
         ModalRoute.of(context).settings.arguments;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.teal,
         elevation: 0,
         leading: IconButton(
           icon: Icon(
@@ -32,11 +32,11 @@ class _ProductInfoState extends State<ProductInfoWoman> {
             ],
           ),
         ),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.favorite_border),
-          )
-        ],
+        // actions: <Widget>[
+        //   IconButton(
+        //     icon: Icon(Icons.favorite_border),
+        //   )
+        // ],
       ),
       body: Container(
         child: Column(
