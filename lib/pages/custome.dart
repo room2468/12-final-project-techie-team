@@ -6,12 +6,12 @@ import 'dart:async';
 
 import 'package:sqflite/sqflite.dart';
 
-class Custome1 extends StatefulWidget {
+class Custome extends StatefulWidget {
   @override
-  Custome1State createState() => Custome1State();
+  CustomeState createState() => CustomeState();
 }
 
-class Custome1State extends State<Custome1> {
+class CustomeState extends State<Custome> {
   DbHelper dbHelper = DbHelper();
   int count = 0;
   List<Custom> itemList;
