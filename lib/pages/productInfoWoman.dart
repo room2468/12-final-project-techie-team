@@ -32,11 +32,6 @@ class _ProductInfoState extends State<ProductInfoWoman> {
             ],
           ),
         ),
-        // actions: <Widget>[
-        //   IconButton(
-        //     icon: Icon(Icons.favorite_border),
-        //   )
-        // ],
       ),
       body: Container(
         child: Column(
@@ -105,7 +100,7 @@ class _ProductInfoState extends State<ProductInfoWoman> {
               height: 100,
               padding: EdgeInsets.only(left: 25, right: 25),
               alignment: Alignment.bottomCenter,
-              color: Colors.grey,
+              color: Colors.white,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[],
