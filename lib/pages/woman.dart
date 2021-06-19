@@ -1,3 +1,4 @@
+import 'package:final_project/pages/navigation.dart';
 import 'package:final_project/pages/productInfoWoman.dart';
 import 'package:final_project/pages/recommendation.dart';
 import 'package:flutter/cupertino.dart';
@@ -29,21 +30,22 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Navigation(),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.teal,
-        leading: IconButton(
-          icon: Icon(
-            Icons.arrow_back_ios,
-            color: Colors.black,
-          ),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Recommendation()),
-            );
-          },
-        ),
+        // leading: IconButton(
+        //   icon: Icon(
+        //     Icons.arrow_back_ios,
+        //     color: Colors.black,
+        //   ),
+        //   onPressed: () {
+        //     Navigator.push(
+        //       context,
+        //       MaterialPageRoute(builder: (context) => Recommendation()),
+        //     );
+        //   },
+        // ),
         title: Container(
           width: 50,
           height: 50,
@@ -53,15 +55,6 @@ class _MainPageState extends State<MainPage> {
             ],
           ),
         ),
-        // centerTitle: true,
-        // actions: <Widget>[
-        //   IconButton(
-        //     icon: Icon(
-        //       Icons.search,
-        //       color: Colors.black,
-        //     ),
-        //   ),
-        // ],
       ),
       backgroundColor: Colors.black,
       body: Container(
