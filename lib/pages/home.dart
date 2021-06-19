@@ -1,18 +1,17 @@
 import 'package:carousel_pro/carousel_pro.dart';
-import 'package:final_project/pages/custome1.dart';
+import 'package:final_project/pages/custome.dart';
 import 'package:final_project/pages/information.dart';
 import 'package:final_project/pages/recommendation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class HomeFloral extends StatelessWidget {
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //membuat widget dan menjalankan program
     Widget image_slider_carousel = Container(
       //slider pada dihalaman awal
-      height: 500,
-      //width: 200,
+      height: 430,
       child: Carousel(
         boxFit: BoxFit.fill,
         images: [
@@ -30,21 +29,22 @@ class HomeFloral extends StatelessWidget {
         autoplay: true, // Slider berjalan sesuai dengan waktu yang ditentukan
         indicatorBgPadding: 1.0,
         dotBgColor: Colors.black,
-        dotColor: Colors.red,
+        dotColor: Colors.white,
         dotSize: 4.0,
       ),
     );
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Parfume'),
+        title: Text('Techie Parfume'),
+        backgroundColor: Colors.teal,
       ),
       body: Container(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             image_slider_carousel,
-            //button recomendation
+            //button recommendation
             Container(
               height: 50,
               width: 250,
@@ -63,7 +63,7 @@ class HomeFloral extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Recommendation1()),
+                    MaterialPageRoute(builder: (context) => Recommendation()),
                   );
                 },
               ),
@@ -87,7 +87,7 @@ class HomeFloral extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Custome1()),
+                    MaterialPageRoute(builder: (context) => Custome()),
                   );
                 },
               ),
