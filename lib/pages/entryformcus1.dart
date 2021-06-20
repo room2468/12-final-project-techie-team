@@ -1,5 +1,6 @@
 import 'package:final_project/models/item_custome.dart';
 import 'package:flutter/material.dart';
+import 'package:final_project/pages/navigation.dart';
 
 class EntryFormCus1 extends StatefulWidget {
   final Custom custom;
@@ -29,10 +30,10 @@ class EntryFormCus1State extends State<EntryFormCus1> {
     }
     //rubah
     return Scaffold(
+        drawer: Navigation(),
         appBar: AppBar(
           backgroundColor: Colors.teal,
           title: custom == null ? Text('Tambah') : Text('Ubah'),
-          leading: Icon(Icons.keyboard_arrow_left),
         ),
         body: Padding(
           padding: EdgeInsets.only(top: 15.0, left: 10.0, right: 10.0),
