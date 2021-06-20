@@ -23,7 +23,8 @@ class Detail extends StatelessWidget {
                   new EdgeInsets.all(10), //memberi jarak dari gambar ke teks
               child: new Center(
                   child: new Column(children: <Widget>[
-                new Text(judul, style: new TextStyle(fontSize: 26)),
+                new Text(judul,
+                    style: new TextStyle(fontSize: 26, color: Colors.white)),
                 new Text(
                   desc,
                   style: new TextStyle(fontSize: 20, color: Colors.grey),
