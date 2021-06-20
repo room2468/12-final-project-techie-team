@@ -76,6 +76,12 @@ flutter:
   - img/pic9.jpeg
   - img/man.jpeg
   - img/woman.jpeg
+  - img/page1.png
+  - img/page2.png
+  - img/page3.png
+  - img/page4.png
+  - img/page5.png
+  - img/page6.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
