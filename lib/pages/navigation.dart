@@ -1,6 +1,7 @@
 import 'package:final_project/pages/home.dart';
 import 'package:final_project/pages/information.dart';
 import 'package:final_project/pages/recommendation.dart';
+import 'package:final_project/pages/custome.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,7 @@ class Navigation extends StatelessWidget {
             buildMenuItem(
               text: 'Information',
               icon: Icons.info,
-              onClicked: () => selectedItem(context, 2),
+              onClicked: () => selectedItem(context, 3),
             ),
             Divider(color: Colors.white70),
           ],
@@ -83,6 +84,10 @@ class Navigation extends StatelessWidget {
             .push(MaterialPageRoute(builder: (context) => Recommendation()));
         break;
       case 2:
+        Navigator.of(context)
+            .push(MaterialPageRoute(builder: (context) => Custome()));
+        break;
+      case 3:
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => Information()));
     }
