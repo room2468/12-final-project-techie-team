@@ -30,6 +30,7 @@ class EntryFormCus1State extends State<EntryFormCus1> {
     //rubah
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.teal,
           title: custom == null ? Text('Tambah') : Text('Ubah'),
           leading: Icon(Icons.keyboard_arrow_left),
         ),
@@ -61,7 +62,7 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                   controller: bahan1Controller,
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    labelText: 'Bahan 1',
+                    labelText: 'Jenis Parfum',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -77,7 +78,7 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                   keyboardType:
                       TextInputType.number, //keyboard inputan hanya angka
                   decoration: InputDecoration(
-                    labelText: 'Ukuran 1 dalam ml',
+                    labelText: 'Ukuran parfum dalam ml',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -92,7 +93,7 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                   controller: bahan2Controller,
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    labelText: 'Bahan 2',
+                    labelText: 'Aroma Parfum',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -107,7 +108,7 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                   controller: ukuran2Controller,
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
-                    labelText: 'Ukuran 2 dalam ml',
+                    labelText: 'Kandungan Alkohol %',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -123,8 +124,8 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                     // tombol simpan
                     Expanded(
                       child: RaisedButton(
-                        color: Theme.of(context).primaryColorDark,
-                        textColor: Theme.of(context).primaryColorLight,
+                        color: Colors.teal,
+                        textColor: Colors.black,
                         child: Text(
                           'Save',
                           textScaleFactor: 1.5,
@@ -157,8 +158,8 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                     // tombol batal
                     Expanded(
                       child: RaisedButton(
-                        color: Theme.of(context).primaryColorDark,
-                        textColor: Theme.of(context).primaryColorLight,
+                        color: Colors.teal,
+                        textColor: Colors.black,
                         child: Text(
                           'Cancel',
                           textScaleFactor: 1.5,
