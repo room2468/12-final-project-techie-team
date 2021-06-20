@@ -10,15 +10,25 @@ class Page2 extends StatelessWidget {
       ),
       body: new ListView(
         children: <Widget>[
-          Container(
-            child: Column(
-              children: <Widget>[
-                new Image.asset("img/img2.jpg"), //gambar yang akan ditampilkan
-              ],
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Container(
+              decoration: BoxDecoration(
+                color: Colors.tealAccent,
+                borderRadius: BorderRadius.circular(30),
+              ),
+              padding: new EdgeInsets.all(15.0),
+              child: Column(
+                children: <Widget>[
+                  new Image.asset(
+                      "img/page2.png", //gambar yang akan ditampilkan
+                      fit: BoxFit.cover),
+                ],
+              ),
+              height: 210,
+              width: 200,
+              margin: EdgeInsets.only(top: 14, left: 5, right: 5),
             ),
-            height: 200,
-            width: 400,
-            margin: EdgeInsets.only(top: 20, left: 5, right: 5),
           ),
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
