@@ -6,7 +6,7 @@ class Page4 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.teal, // background title
-        title: new Text("Informasi 4"),
+        title: new Text("Daftar Parfum Pria Termahal"),
       ),
       body: new ListView(
         children: <Widget>[
