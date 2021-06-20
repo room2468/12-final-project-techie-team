@@ -27,8 +27,10 @@ class CustomeState extends State<Custome> {
       itemList = List<Custom>();
     }
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text('Custome Parfume'),
+        backgroundColor: Colors.teal,
       ),
       body: Column(children: [
         Expanded(
@@ -42,6 +44,7 @@ class CustomeState extends State<Custome> {
             child: Column(
               children: [
                 RaisedButton(
+                  color: Colors.teal,
                   child: Text("Tambah Item Custome"),
                   onPressed: () async {
                     var item = await navigateToEntryForm(context, null);
@@ -98,14 +101,16 @@ class CustomeState extends State<Custome> {
             //untuk menampilkan atau mencetak hasil dari pengisian fom
             subtitle:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text('Bahan 1     : ' + this.itemList[index].bahan1.toString()),
-              Text('Ukuran 1    : ' +
+              Text('Jenis Parfum     : ' +
+                  this.itemList[index].bahan1.toString()),
+              Text('Ukuran Parfum   : ' +
                   this.itemList[index].ukuran1.toString() +
                   ' ml'),
-              Text('Bahan 2     : ' + this.itemList[index].bahan2.toString()),
-              Text('Ukuran 2    : ' +
+              Text('Aroma Parfum    : ' +
+                  this.itemList[index].bahan2.toString()),
+              Text('Alkohol         : ' +
                   this.itemList[index].ukuran2.toString() +
-                  ' ml'),
+                  ' %'),
             ]),
             trailing: GestureDetector(
               child: Icon(Icons.delete),
