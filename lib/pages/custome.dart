@@ -3,7 +3,7 @@ import 'package:final_project/models/item_custome.dart';
 import 'package:final_project/pages/entryformcus1.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-
+import 'package:final_project/pages/navigation.dart';
 import 'package:sqflite/sqflite.dart';
 
 class Custome extends StatefulWidget {
@@ -27,6 +27,7 @@ class CustomeState extends State<Custome> {
       itemList = List<Custom>();
     }
     return Scaffold(
+      drawer: Navigation(),
       backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text('Custome Parfume'),
