@@ -35,6 +35,7 @@ class Home extends StatelessWidget {
     );
     return Scaffold(
       backgroundColor: Colors.black,
+      // drawer: Navigation(),
       appBar: AppBar(
         title: Text('Techie Parfume'),
         backgroundColor: Colors.teal,
@@ -46,14 +47,15 @@ class Home extends StatelessWidget {
             image_slider_carousel,
             //button recommendation
             Container(
-              height: 50,
-              width: 250,
+              height: 80,
+              width: 450,
               margin: EdgeInsets.all(10),
               child: RaisedButton(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                     side: BorderSide(color: Color.fromRGBO(0, 0, 0, 1))),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Recommendation",
                         style: TextStyle(
@@ -70,14 +72,15 @@ class Home extends StatelessWidget {
             ),
             //button custome
             Container(
-              height: 50,
-              width: 250,
+              height: 80,
+              width: 450,
               margin: EdgeInsets.all(10),
               child: RaisedButton(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                     side: BorderSide(color: Color.fromRGBO(0, 0, 0, 1))),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Custome",
                         style: TextStyle(
@@ -94,14 +97,15 @@ class Home extends StatelessWidget {
             ),
             //button informasi
             Container(
-              height: 50,
-              width: 250,
+              height: 80,
+              width: 450,
               margin: EdgeInsets.all(10),
               child: RaisedButton(
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(18.0),
                     side: BorderSide(color: Color.fromRGBO(0, 0, 0, 1))),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text("Information",
                         style: TextStyle(
