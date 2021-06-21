@@ -6,7 +6,6 @@ import 'page4.dart';
 import 'page5.dart';
 import 'page6.dart';
 import 'navigation.dart';
-import 'package:final_project/models/item_information.dart';
 
 void main() {
   runApp(
@@ -23,13 +22,12 @@ class Information extends StatelessWidget {
     //membuat widget dan menjalankan program
     return MaterialApp(
         home: Scaffold(
-      backgroundColor: Colors.white,
       drawer: Navigation(),
       //mengatur layout dasar
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.teal,
-        title: Text("Informasi Seputar Parfum!"),
+        title: Text("Informasi Seputar Parfum"),
       ),
       body: ListView(
         children: <Widget>[
@@ -52,12 +50,13 @@ class Information extends StatelessWidget {
                 margin: EdgeInsets.only(left: 10, right: 7),
                 alignment: Alignment.topCenter,
                 padding: EdgeInsets.only(top: 17, bottom: 10, left: 5),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                ),
-                child: Text("Simak Berita Berikut Ini",
-                    style:
-                        TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                decoration: BoxDecoration(),
+                child: Text("Simak Berita Berikut Ini!",
+                    style: TextStyle(
+                      fontSize: 23,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    )),
               ),
             ],
           )),
@@ -87,9 +86,12 @@ class Information extends StatelessWidget {
                     padding: EdgeInsets.only(left: 5),
                   ),
                   Flexible(
-                    child: Text(
-                        "Ini Dia Cara Menggunakan Parfum Agar Tahan Lama",
-                        style: TextStyle(fontSize: 12)),
+                    child:
+                        Text("Ini Dia Cara Menggunakan Parfum Agar Tahan Lama",
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            )),
                   ),
                 ],
               )),
@@ -154,7 +156,10 @@ class Information extends StatelessWidget {
                   ),
                   Flexible(
                     child: Text("Tahukah Kamu Tipe-Tipe Aroma Parfum?",
-                        style: TextStyle(fontSize: 12)),
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        )),
                   ),
                 ],
               )),
@@ -219,7 +224,10 @@ class Information extends StatelessWidget {
                   ),
                   Flexible(
                     child: Text("Deretan Parfum Wanita Ter-Mahal",
-                        style: TextStyle(fontSize: 12)),
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        )),
                   ),
                 ],
               )),
@@ -284,7 +292,10 @@ class Information extends StatelessWidget {
                   ),
                   Flexible(
                     child: Text("Deretan Parfum Pria Ter-Mahal",
-                        style: TextStyle(fontSize: 12)),
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        )),
                   ),
                 ],
               )),
@@ -350,7 +361,10 @@ class Information extends StatelessWidget {
                   Flexible(
                     child: Text(
                         "Beberapa Mitos dan Fakta Seputar Parfum, Wajib Kamu Ketahui!",
-                        style: TextStyle(fontSize: 12)),
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        )),
                   ),
                 ],
               )),
@@ -416,7 +430,10 @@ class Information extends StatelessWidget {
                   Flexible(
                     child: Text(
                         "Parfum yang Cocok Untukmu, Berdasarkan Zodiak Kamu!",
-                        style: TextStyle(fontSize: 12)),
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        )),
                   ),
                 ],
               )),
