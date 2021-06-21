@@ -1,6 +1,5 @@
 import 'package:final_project/pages/navigation.dart';
 import 'package:final_project/pages/productInfoWoman.dart';
-import 'package:final_project/pages/recommendation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -34,27 +33,7 @@ class _MainPageState extends State<MainPage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.teal,
-        // leading: IconButton(
-        //   icon: Icon(
-        //     Icons.arrow_back_ios,
-        //     color: Colors.black,
-        //   ),
-        //   onPressed: () {
-        //     Navigator.push(
-        //       context,
-        //       MaterialPageRoute(builder: (context) => Recommendation()),
-        //     );
-        //   },
-        // ),
-        title: Container(
-          width: 50,
-          height: 50,
-          child: Column(
-            children: <Widget>[
-              new Image.asset("img/logo.png"),
-            ],
-          ),
-        ),
+        title: new Text("Rekomendasi Parfum Pria"),
       ),
       backgroundColor: Colors.black,
       body: Container(
