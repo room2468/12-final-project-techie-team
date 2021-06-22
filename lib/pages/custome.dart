@@ -88,33 +88,76 @@ class CustomeState extends State<Custome> {
             //pengganti icon pada sisi kiri hasil print dari fom
             leading: Column(
               children: [
-                Text('CUST ID'),
+                Text(
+                  'CUST ID',
+                  style: TextStyle(
+                      // fontSize: 25,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
                 Text(
                   this.itemList[index].id.toString(),
-                  style: TextStyle(fontSize: 25),
+                  style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.teal,
+                      fontWeight: FontWeight.bold),
                 ),
               ],
             ),
             title: Text(
               this.itemList[index].pemesan,
-              style: textStyle,
+              style: TextStyle(
+                  fontSize: 30,
+                  height: 1.5,
+                  color: Colors.teal,
+                  fontWeight: FontWeight.bold),
             ),
             //untuk menampilkan atau mencetak hasil dari pengisian fom
             subtitle:
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text('Jenis Parfum     : ' +
-                  this.itemList[index].bahan1.toString()),
-              Text('Ukuran Parfum   : ' +
-                  this.itemList[index].ukuran1.toString() +
-                  ' ml'),
-              Text('Aroma Parfum    : ' +
-                  this.itemList[index].bahan2.toString()),
-              Text('Alkohol         : ' +
-                  this.itemList[index].ukuran2.toString() +
-                  ' %'),
+              Text(
+                'Kategori Parfum  : ' + this.itemList[index].bahan1.toString(),
+                style: TextStyle(
+                    fontSize: 12,
+                    //height: 1.5,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600),
+              ),
+              Text(
+                'Ukuran Parfum    : ' +
+                    this.itemList[index].ukuran1.toString() +
+                    ' ml',
+                style: TextStyle(
+                    fontSize: 12,
+                    //height: 1.5,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600),
+              ),
+              Text(
+                'Aroma Parfum     : ' + this.itemList[index].bahan2.toString(),
+                style: TextStyle(
+                    fontSize: 12,
+                    //height: 1.5,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600),
+              ),
+              Text(
+                'Alkohol                  : ' +
+                    this.itemList[index].ukuran2.toString() +
+                    ' %',
+                style: TextStyle(
+                    fontSize: 12,
+                    //height: 1.5,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w600),
+              ),
             ]),
             trailing: GestureDetector(
-              child: Icon(Icons.delete),
+              child: Icon(
+                Icons.delete,
+                color: Colors.teal,
+                size: 50,
+              ),
               onTap: () async {
                 //TODO 3 Panggil Fungsi untuk Delete dari DB berdasarkan Item
                 int id = this.itemList[index].id; // get id from sqlite database
