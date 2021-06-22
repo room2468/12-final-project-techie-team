@@ -33,10 +33,12 @@ class EntryFormCus1State extends State<EntryFormCus1> {
         drawer: Navigation(),
         appBar: AppBar(
           backgroundColor: Colors.teal,
-          title: custom == null ? Text('Tambah') : Text('Ubah'),
+          title: custom == null
+              ? Text('Tambah Item Parfum')
+              : Text('Ubah Item Parfum'),
         ),
         body: Padding(
-          padding: EdgeInsets.only(top: 15.0, left: 10.0, right: 10.0),
+          padding: EdgeInsets.only(top: 20.0, left: 10.0, right: 10.0),
           child: ListView(
             children: <Widget>[
               // nama
@@ -47,8 +49,9 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
                     labelText: 'Nama Pemesan',
+                    icon: Icon(Icons.people),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
+                      borderRadius: BorderRadius.circular(30.0),
                     ),
                   ),
                   onChanged: (value) {
@@ -63,9 +66,11 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                   controller: bahan1Controller,
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    labelText: 'Jenis Parfum',
+                    hintText: 'Man / Woman',
+                    labelText: 'Kategori Parfum',
+                    icon: Icon(Icons.all_inbox_rounded),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
+                      borderRadius: BorderRadius.circular(30.0),
                     ),
                   ),
                   onChanged: (value) {},
@@ -79,9 +84,11 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                   keyboardType:
                       TextInputType.number, //keyboard inputan hanya angka
                   decoration: InputDecoration(
-                    labelText: 'Ukuran parfum dalam ml',
+                    hintText: 'dalam ml',
+                    labelText: 'Ukuran parfum',
+                    icon: Icon(Icons.art_track),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
+                      borderRadius: BorderRadius.circular(30.0),
                     ),
                   ),
                   onChanged: (value) {},
@@ -95,8 +102,9 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
                     labelText: 'Aroma Parfum',
+                    icon: Icon(Icons.blur_on_rounded),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
+                      borderRadius: BorderRadius.circular(30.0),
                     ),
                   ),
                   onChanged: (value) {},
@@ -110,8 +118,9 @@ class EntryFormCus1State extends State<EntryFormCus1> {
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     labelText: 'Kandungan Alkohol %',
+                    icon: Icon(Icons.battery_unknown_outlined),
                     border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
+                      borderRadius: BorderRadius.circular(30.0),
                     ),
                   ),
                   onChanged: (value) {},
