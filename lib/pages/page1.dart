@@ -30,11 +30,28 @@ class Page1 extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.only(left: 10, right: 7),
+            alignment: Alignment.topCenter,
+            padding: EdgeInsets.only(top: 17, bottom: 10, left: 5),
+            decoration: BoxDecoration(),
+            child: Text(
+                "Sumber : https://benefits.bankmandiri.co.id/article/cara-memakai-parfum-agar-tahan-lama",
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  decorationThickness: 2,
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red,
+                )),
+          ),
+          Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "1. Gunakan Pelembab Sebelum Menyemprotkan Parfum",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -55,9 +72,11 @@ class Page1 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "2. Semprotkan Parfum ke Area yang Tepat",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -78,9 +97,11 @@ class Page1 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "3. Semprotkan Parfum dari Jarak 15-25 cm",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -101,9 +122,11 @@ class Page1 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "4. Semprotkan Parfum Lebih dari Sekali",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -124,9 +147,11 @@ class Page1 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "5. Hindari Menggosok Kulit Setelah Menyemprotkan Parfum",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -147,9 +172,11 @@ class Page1 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "6. Jangan Semprotkan Parfum ke Pakaian",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -170,9 +197,11 @@ class Page1 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "7. Pilih Jenis Parfum yang Tepat",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -193,9 +222,11 @@ class Page1 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "8. Pilih Base Note yang Tepat",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -216,9 +247,11 @@ class Page1 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "9. Simpan Parfum dengan Benar",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
