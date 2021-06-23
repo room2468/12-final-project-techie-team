@@ -1,7 +1,9 @@
 import 'dart:io';
-import 'package:final_project/models/item_custome.dart';
+//import 'package:final_project/models/item_custome.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
+
+import 'item_custome.dart';
 
 class DbHelper {
   static DbHelper _dbHelper;

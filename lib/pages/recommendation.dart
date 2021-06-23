@@ -1,7 +1,11 @@
-import 'package:final_project/pages/home.dart';
-import 'package:final_project/pages/woman.dart';
-import 'package:final_project/pages/man.dart';
+//import 'package:final_project/pages/home.dart';
+//import 'package:final_project/pages/woman.dart';
+//import 'package:final_project/pages/man.dart';
 import 'package:flutter/material.dart';
+
+import 'home.dart';
+import 'man.dart';
+import 'woman.dart';
 
 class Recommendation extends StatefulWidget {
   @override

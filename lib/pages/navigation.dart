@@ -1,9 +1,14 @@
-import 'package:final_project/pages/home.dart';
-import 'package:final_project/pages/information.dart';
-import 'package:final_project/pages/recommendation.dart';
-import 'package:final_project/pages/custome.dart';
+//import 'package:final_project/pages/home.dart';
+//import 'package:final_project/pages/information.dart';
+//import 'package:final_project/pages/recommendation.dart';
+//import 'package:final_project/pages/custome.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'custome.dart';
+import 'home.dart';
+import 'information.dart';
+import 'recommendation.dart';
 
 class Navigation extends StatelessWidget {
   final padding = EdgeInsets.symmetric(horizontal: 20);

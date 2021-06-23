@@ -1,9 +1,13 @@
 import 'package:carousel_pro/carousel_pro.dart';
-import 'package:final_project/pages/custome.dart';
-import 'package:final_project/pages/information.dart';
-import 'package:final_project/pages/recommendation.dart';
+//import 'package:final_project/pages/custome.dart';
+//import 'package:final_project/pages/information.dart';
+//import 'package:final_project/pages/recommendation.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'custome.dart';
+import 'information.dart';
+import 'recommendation.dart';
 
 class Home extends StatelessWidget {
   @override

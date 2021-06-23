@@ -1,7 +1,10 @@
-import 'package:final_project/pages/navigation.dart';
-import 'package:final_project/pages/productInfoWoman.dart';
+//import 'package:final_project/pages/navigation.dart';
+//import 'package:final_project/pages/productInfoWoman.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+import 'navigation.dart';
+import 'productInfoWoman.dart';
 
 void main() {
   runApp(Man());

@@ -1,6 +1,9 @@
-import 'package:final_project/models/item_custome.dart';
+//import 'package:final_project/models/item_custome.dart';
 import 'package:flutter/material.dart';
-import 'package:final_project/pages/navigation.dart';
+//import 'package:final_project/pages/navigation.dart';
+
+import '../models/item_custome.dart';
+import 'navigation.dart';
 
 class EntryFormCus1 extends StatefulWidget {
   final Custom custom;
