@@ -31,11 +31,28 @@ class Page2 extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.only(left: 10, right: 7),
+            alignment: Alignment.topCenter,
+            padding: EdgeInsets.only(top: 17, bottom: 10, left: 5),
+            decoration: BoxDecoration(),
+            child: Text(
+                "Sumber : https://voi.id/lifestyle/27217/8-tipe-aroma-yang-umum-digunakan-pada-produk-parfum",
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  decorationThickness: 2,
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red,
+                )),
+          ),
+          Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "1. Musk",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -56,9 +73,11 @@ class Page2 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "2. Oceanic Air",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -79,9 +98,11 @@ class Page2 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "3. Gourmand",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -102,9 +123,11 @@ class Page2 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "4. Floral",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -125,9 +148,11 @@ class Page2 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "5. Fruity",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -148,9 +173,11 @@ class Page2 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "6. Powdery",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -171,9 +198,11 @@ class Page2 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "7. Woody",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -194,9 +223,11 @@ class Page2 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "8. Green",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
