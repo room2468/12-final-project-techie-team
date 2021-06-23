@@ -31,11 +31,28 @@ class Page5 extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.only(left: 10, right: 7),
+            alignment: Alignment.topCenter,
+            padding: EdgeInsets.only(top: 17, bottom: 10, left: 5),
+            decoration: BoxDecoration(),
+            child: Text(
+                "Sumber : https://www.merdeka.com/gaya/5-mitos-tentang-parfum-yang-salah-besar.html",
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  decorationThickness: 2,
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red,
+                )),
+          ),
+          Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "Mitos 1 : Parfum seharusnya disimpan di kamar mandi",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -56,9 +73,11 @@ class Page5 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "Mitos 2 : Bau parfum yang ada di kertas, sama dengan baunya ketika di kulit",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -79,9 +98,11 @@ class Page5 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "Mitos 3 : Cara menggunakan parfum paling efektif adalah dengan menyemprotkannya ke udara, lalu kita berjalan ke arahnya",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -102,9 +123,11 @@ class Page5 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "Mitos 4 : Memakai parfum dengan cara mengaplikasikannya ke tangan dan menggosokkannya adalah cara yang paling efektif",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -125,9 +148,11 @@ class Page5 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "Mitos 5 : Makin mahal sebuah parfum, makin baik kualitasnya",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
