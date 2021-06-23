@@ -31,11 +31,28 @@ class Page4 extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.only(left: 10, right: 7),
+            alignment: Alignment.topCenter,
+            padding: EdgeInsets.only(top: 17, bottom: 10, left: 5),
+            decoration: BoxDecoration(),
+            child: Text(
+                "Sumber : https://www.finansialku.com/parfum-pria-termahal-di-dunia/",
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  decorationThickness: 2,
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red,
+                )),
+          ),
+          Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "1. Clive Christian’s Imperial Majesty",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -56,9 +73,11 @@ class Page4 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "2. Caron’s Poivre",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -79,9 +98,11 @@ class Page4 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "3. Clive Christian No. 1",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -102,9 +123,11 @@ class Page4 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "4. EAU D’hadrien Annick Goutal Perfume",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -125,9 +148,11 @@ class Page4 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "5. Clive Christian 1872",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -148,9 +173,11 @@ class Page4 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "6. Clive Christian Perfume Traveler Set",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -171,9 +198,11 @@ class Page4 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "7. Clive Christian X Perfume Spray",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -194,9 +223,11 @@ class Page4 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "8. Straight to Heaven by Kilian",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -217,9 +248,11 @@ class Page4 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "9. Clive Christian “C”",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -240,9 +273,11 @@ class Page4 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "10. Ambre Topkapi",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
