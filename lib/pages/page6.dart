@@ -31,11 +31,28 @@ class Page6 extends StatelessWidget {
             ),
           ),
           Container(
+            margin: EdgeInsets.only(left: 10, right: 7),
+            alignment: Alignment.topCenter,
+            padding: EdgeInsets.only(top: 17, bottom: 10, left: 5),
+            decoration: BoxDecoration(),
+            child: Text(
+                "Sumber : https://www.motherandbaby.co.id/article/2020/11/29/19185/Floral-atau-Musky-Ini-Wangi-Parfum-yang-Sesuai-Zodiak-Anda",
+                style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  decorationThickness: 2,
+                  fontSize: 10,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.red,
+                )),
+          ),
+          Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "1. Aries: Asap atau Dupa (Smoke)",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -56,9 +73,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "2. Taurus: Cendana (Sandalwood)",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -79,9 +98,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "3. Gemini: Teratai (Water Lily)",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -102,9 +123,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "4. Cancer: Vanilla",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -125,9 +148,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "5. Leo: Kulit (Leather)",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -148,9 +173,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "6. Virgo: Melati",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -171,9 +198,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "7. Libra: Mawar",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -194,9 +223,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "8. Scorpio: Musk",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -217,9 +248,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "9. Sagitarius: Sitrus",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -240,9 +273,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "10. Capricorn: Cengkeh",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -263,9 +298,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "11. Aquarius: Amber",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
@@ -286,9 +323,11 @@ class Page6 extends StatelessWidget {
           Container(
             padding: new EdgeInsets.all(10), //mengatur jarak
             child: new Card(
+              color: Colors.teal,
               child: new Text(
                 "12. Pisces: Aquatic",
                 style: TextStyle(
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.bold), //style untuk judul
               ),
