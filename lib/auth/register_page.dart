@@ -1,26 +1,22 @@
 //import 'package:final_project/auth/auth.dart';
-//import 'package:final_project/auth/register_page.dart';
-//import 'package:final_project/auth/sign_in.dart';
-// 'package:final_project/pages/home.dart';
-//import 'package:firebase/firebase.dart';
+//import 'package:final_project/auth/login_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_finalproject/auth/register_page.dart';
-import 'auth.dart';
-import '../pages/home.dart';
-import 'sign_in.dart';
+import 'package:flutter_finalproject/auth/auth.dart';
 
-class LoginPage extends StatefulWidget {
+import 'login_page.dart';
+
+class RegisterPage extends StatefulWidget {
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _RegisterPageState createState() => _RegisterPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _RegisterPageState extends State<RegisterPage> {
   final _formKey = GlobalKey<FormState>(); //membuat key
   TextEditingController emailController =
       TextEditingController(); //membuat controller
   TextEditingController passwordController = TextEditingController();
-  var authHandler = new Auth(); //membuat authHandler
+  var authHandler = new Auth(); //membuat auth handler
 
   @override
   Widget build(BuildContext context) {
@@ -33,11 +29,9 @@ class _LoginPageState extends State<LoginPage> {
             slivers: <Widget>[
               SliverList(
                 delegate: SliverChildListDelegate([
-                  _showLogin(),
-                  _formLogin(),
-                  _loginButton(),
-                  _textOr(),
-                  _signInButton(),
+                  _showTitle(),
+                  _formRegister(),
+                  _registerButton(),
                 ]),
               ),
               SliverFillRemaining(
@@ -49,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
                     mainAxisSize: MainAxisSize.min,
                     children: <Widget>[
                       Text(
-                        "Don’t have account ?",
+                        "Already have account ?",
                         style: TextStyle(color: Colors.white),
                       ),
                       GestureDetector(
@@ -57,10 +51,10 @@ class _LoginPageState extends State<LoginPage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => RegisterPage()));
+                                  builder: (context) => LoginPage()));
                         },
                         child: Text(
-                          "Register here",
+                          "Login here",
                           style: TextStyle(
                               fontWeight: FontWeight.w700,
                               decoration: TextDecoration.underline,
@@ -78,16 +72,16 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _showLogin() {
+  Widget _showTitle() {
     return Padding(
       padding: EdgeInsets.only(top: 60, bottom: 60),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
-            margin: EdgeInsets.only(left: 80),
+            margin: EdgeInsets.only(left: 40),
             child: Text(
-              "Login Parfum",
+              "Register Parfum",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 36,
@@ -108,8 +102,8 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-//membuat form untuk login
-  Widget _formLogin() {
+//membuat form registrasi
+  Widget _formRegister() {
     return Form(
       key: _formKey,
       child: Column(children: <Widget>[
@@ -119,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
           decoration: BoxDecoration(
             color: Colors.grey[200],
           ),
-          //membuuat form email
+          //form email
           child: TextFormField(
             controller: emailController,
             keyboardType: TextInputType.emailAddress,
@@ -129,11 +123,11 @@ class _LoginPageState extends State<LoginPage> {
               border: InputBorder.none,
             ),
             validator: (value) {
-              //kondisi ketika memasukkan email
               if (value.isEmpty) {
+                //kondisi untuk inputan email
                 return 'Enter an Email Address';
               } else if (!value.contains('@')) {
-                return 'Please enter a valid email address'; //email harus menggunakan @
+                return 'Please enter a valid email address';
               }
               return null;
             },
@@ -145,7 +139,7 @@ class _LoginPageState extends State<LoginPage> {
           decoration: BoxDecoration(
             color: Colors.grey[200],
           ),
-          //membuat form password
+          //form password
           child: TextFormField(
             controller: passwordController,
             keyboardType: TextInputType.visiblePassword,
@@ -161,10 +155,10 @@ class _LoginPageState extends State<LoginPage> {
             // The validator receives the text that the user has entered.
             validator: (value) {
               if (value.isEmpty) {
-                //kondisi ketika input password
+                //kondisi inputan password
                 return 'Enter Password';
               } else if (value.length < 6) {
-                return 'Password must be atleast 6 characters!'; //password min 6 karakter
+                return 'Password must be atleast 6 characters!'; //password min 6 char
               }
               return null;
             },
@@ -174,96 +168,25 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-//membuat button untuk login
-  Widget _loginButton() {
-    return Container(
-      margin: EdgeInsets.symmetric(vertical: 10),
-      width: double.infinity,
-      child: RaisedButton(
-        padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-        onPressed: () {
-          authHandler //auth pada auth.dart
-              .handleSignInEmail(emailController.text, passwordController.text)
-              .then((User user) {
-            Navigator.push(
-                context, new MaterialPageRoute(builder: (context) => Home()));
-          }).catchError((e) => print(e));
-        },
-        child: Text(
-          "Login",
-          style: TextStyle(fontSize: 15, color: Colors.white),
-        ),
-        color: Colors.black,
-        elevation: 0,
-      ),
-    );
-  }
-
-//menampilkan teks or
-  Widget _textOr() {
-    return Row(
-      children: <Widget>[
-        Expanded(
-          child: Divider(
-            thickness: 1,
-            color: Colors.white,
-          ),
-        ),
-        SizedBox(width: 20),
-        Text(
-          "OR",
-          style: TextStyle(color: Colors.white),
-        ),
-        SizedBox(width: 20),
-        Expanded(
-          child: Divider(
-            //menampilkan garis
-            thickness: 1,
-            color: Colors.white,
-          ),
-        ),
-      ],
-    );
-  }
-
-//membuat button sign in
-  Widget _signInButton() {
+//membuat register button
+  Widget _registerButton() {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 4),
       child: FlatButton(
         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
         color: Colors.black,
         onPressed: () {
-          signInWithGoogle().then((result) {
-            if (result != null) {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) {
-                    return Home();
-                  },
-                ),
-              );
-            }
-          });
+          authHandler
+              .handleSignUp(emailController.text,
+                  passwordController.text) //auth handler pada auth.dart
+              .then((User user) {
+            Navigator.push(context,
+                new MaterialPageRoute(builder: (context) => new LoginPage()));
+          }).catchError((e) => print(e));
         },
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Image(
-                image: NetworkImage(//menampilkan gambar google
-                    'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png'),
-                height: 20.0),
-            Padding(
-              padding: const EdgeInsets.only(left: 10),
-              child: Text(
-                'Login with Google',
-                style: TextStyle(
-                  fontSize: 15,
-                  color: Colors.white,
-                ),
-              ),
-            )
-          ],
+        child: Text(
+          "Register",
+          style: TextStyle(fontSize: 15, color: Colors.white),
         ),
       ),
     );
