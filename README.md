@@ -1,16 +1,62 @@
 # final_project
 
-A new Flutter project.
+1. Tampilan Register Parfum                                               
 
-## Getting Started
+![plot](./img/login.PNG)
 
-This project is a starting point for a Flutter application.
+2. Tampilan Login Parfum
 
-A few resources to get you started if this is your first Flutter project:
+![plot](./img/regist.PNG)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+3. Tampilan Halaman Home
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![plot](./img/home.PNG)
+
+4. Tampilan Navigasi Bar
+
+![plot](./img/navigation.PNG)
+
+5. Tampilan Halaman Recommendation
+
+![plot](./img/recom.PNG)
+
+6. Tampilan Katalog Parfum Woman
+
+![plot](./img/RecWoman.PNG)
+
+7. Tampilan Detail dari Katalog Parfum Woman
+
+![plot](./img/descWoman.PNG)
+
+8. Tampilan Katalog Parfum Man
+
+![plot](./img/RecMan.PNG)
+
+9. Tampilan Detail dari Katalog Parfum Man
+
+![plot](./img/descMan.PNG)
+
+10. Tampilan Halaman Custome Parfum 
+
+![plot](./img/tabCustom.PNG)
+
+11. Tampilan Tambah Item Pada Halaman Custome
+
+![plot](./img/tambahItem.PNG)
+
+12. Tampilan Ubah Item Pada Halaman Custome
+
+![plot](./img/ubahItem.PNG)
+
+13. Tampilan hapus Item Pada Halaman Custome
+
+![plot](./img/hapusItem.PNG)
+
+14. Tampilan Halaman Information
+
+![plot](./img/information.PNG) ![plot](./img/Information1.PNG)
+
+15. Tampilan Halaman Detail Information
+
+![plot](./img/news1.PNG) ![plot](./img/news2.PNG)
+
